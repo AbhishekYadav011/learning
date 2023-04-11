@@ -1,0 +1,235 @@
+      *US RETAIL SEPARATION SPINCO COPYBOOK  - REPLICATED FROM C0252EAB         
+      *-------------------------------------------------------*         C1600010
+      *       LAYOUT FOR COMMON CHASIS ANNUITIES              *         C1600020
+      *       COPY BOOK    : C1609AE2                         *         C1600010
+      *       DESCRIPTION  : FAMIS TOTALS RECORD              *         C1600010
+OLD*********  LENGTH       : 300                              *         C1600020
+SJ0508*       LENGTH       : 500                              *         C1600020
+      *       DATE CREATED : 09/28/2001                       *         C1600020
+      *       DATE MOD     : 03/22/2005 ADD GMIB PLUS   CHK   *                 
+SJ0508*       DATE MOD     : 08/15/2005 ADD GMAB        SAJ   *                 
+SJ0604*       DATE MOD     : 03/22/2006 ADD GWB4LIFE    SAJ   *                 
+DW0607*       GWB SWT MOD  : 07/26/2006 ADD GWB SWT     DW    *                 
+LR0610*       DATE MOD     : 10/19/2006 ADDITIONAL FIELDS     *                 
+LR0610*                      FOR ENTERPRISE EXCHANGE          *                 
+DW0702*       DATE MOD     : 03/02/2007 ADDED TWO NEW FIELDS  *                 
+DW0702*                      FOR MRD.                    DW   *                 
+LR0803*       DATE MOD     : 03/14/2008 CHANGED FOR EV15      *                 
+LR0803*                      EDB LWG GMIB+ TASK               *                 
+LR0806*       DATE MOD     : 06/02/2008 CHANGED FOR NY LWG    *                 
+LR0806*                      GMIB 6% TASK                     *                 
+LR0510*       DATE MOD     : 05/26/2010 ADDED FIELDS FOR      *                 
+LR0510*                      EV15 RMD                         *                 
+CJ1009*       DATE MOD     : 09/14/2010 ADDED NEW FIELDS      *                 
+CJ1009*                      FOR  AHEV                        *                 
+CJ2964*       DATE MOD     : 06/11/2012 ADDED NEW FIELDS FOR  *                 
+CJ2964*                      MAX IV :                         *                 
+CJ2964*                      - TOTAL-GMIB-WITH-RATE           *                 
+CJ2964*                      - TOTAL-EDB-WITH-RATE            *                 
+CJ3047*       DATE MOD     : 01/12/2013 ADD NEW FIELDS        *                 
+CJ3047*                      FOR INDEXED ANNUITY.             *                 
+RJ0814*       DATE MOD     : 11/30/2014 ADDED NEW FIELDS FOR  *                 
+RJ0814*                             CONTRACT EXTRACT FILE AND *                 
+RJ0814*                             TOTAL EXTRACT FILE        *                 
+LR1114*       DATE MOD     : 11/24/2014 ADDED NEW FIELDS FOR  *                 
+LR1114*                             EA FLEX RIDER CHOICE      *                 
+NY0315*       DATE MOD     : 03/05/15 ADDED NEW FIELDS FOR    *                 
+NY0315*                             EA GPO 2 DAY RIDER        *                 
+CJ0515*       DATE MOD     : 05/18/2015 SURR-PLAN-CODE ADDED  *                 
+CJ0515*                      FOR WMA FIXED DA PRODUCT         *                 
+CJ0515*                      ENHANCEMENTS.                    *                 
+CJ0615*       DATE MOD     : 06/15/2015 ADDED NEW GMAB FIELDS *                 
+CJ0615*                      FOR GMAB MATURING                *                 
+CJ0815*       DATE MOD     : 08/24/2015 REPLACED TOTAL-NET    *                 
+CJ0815*                      -PREMIUM BY TOTAL-CUM-PREMIUM FOR*                 
+CJ0815*                      IPA FEE BREAKPOINT CHANGES       *                 
+SL0915*       DATE MOD     : 09/10/2015 ADDED NEW FIELDS AS   *                 
+SL0915*                      PART OF REINSURANCE DEATH CLAIM  *                 
+SL0915*                      PROJECT                          *                 
+SL0716*       DATE MOD     : 07/21/2016 ADDED NEW FIELDS AS   *                 
+SL0716*                      PART OF FIA                      *                 
+LR1017*       DATE MOD     : 10/25/2017 FEB 2018 FLEX CHOICE  *                 
+LR1017*                      CHANGES                          *                 
+RJ0814*********************************************************         C1600010
+              10  TOTAL-CONT-ID             PIC X(20).                  C1600050
+              10  TOTAL-ADMIN-CODE.                                     C1600060
+                  15  TOTAL-PLAN-CODE       PIC X(06).                  C1600070
+                  15  FILLER                PIC X(02).                  C1600080
+                  15  TOTAL-IRS-MKT-CDE     PIC X(03).                  C1600090
+                  15  FILLER                PIC X(01).                  C1600100
+                  15  TOTAL-CONT-TYP        PIC X(01).                  C1600110
+                  15  FILLER                PIC X(07).                  C1600120
+              10  TOTAL-FUND-VALUE          PIC S9(9)V9(2) COMP-3.      C1600130
+              10  TOTAL-CASH-VALUE          PIC S9(9)V9(2) COMP-3.      C1600140
+              10  TOTAL-PARTIAL-AVAIL       PIC S9(9)V9(2) COMP-3.      C1600150
+              10  TOTAL-GAIN-WITHDRAW-FREE  PIC S9(9)V9(2) COMP-3.      C1600160
+              10  TOTAL-LUMP-SUM-FOR-WITHDRAWAL                         C1600160
+                                            PIC S9(9)V9(2) COMP-3.      C1600160
+      *  GMDB INFO                                                      C1600160
+              10  TOTAL-MIN-DEATH-BFT       PIC S9(9)V9(2) COMP-3.      C1600160
+              10  TOTAL-ANNUAL-INCREASE-AMT PIC S9(9)V9(2) COMP-3.      C1600160
+              10  TOTAL-ROP-PYTS            PIC S9(9)V9(2) COMP-3.      C1600160
+              10  TOTAL-HIGH-ANNIV-VALUE    PIC S9(9)V9(2) COMP-3.      C1600160
+              10  TOTAL-INT-HIGH-ANNIV-VALUE PIC S9(9)V9(2) COMP-3.     C1600160
+              10  TOTAL-GMDB-RATE            PIC S9(2)V9(3) COMP-3.     C1600160
+              10  TOTAL-DEATH-BFT-EXCESS-AMT PIC S9(9)V9(2) COMP-3.     C1600160
+      *  EARNINGS PRESERVATION RIDER INFO                               C1600160
+              10  TOTAL-EPR-AMT              PIC S9(9)V9(2) COMP-3.     C1600160
+              10  TOTAL-RIDER-DB-AMT         PIC S9(9)V9(2) COMP-3.     C1600160
+              10  TOTAL-PYTS-NOT-WDRWN       PIC S9(9)V9(2) COMP-3.     C1600160
+              10  TOTAL-EPR-BENEFIT-PCT      PIC S9(1)V9(4) COMP-3.     C1600160
+      *  GMIB INFO                                                      C1600160
+              10  TOTAL-GMIB-INCOME-BASE-AMT PIC S9(9)V9(2) COMP-3.     C1600160
+              10  TOTAL-ACCUM-PURCH-PYTS     PIC S9(9)V9(2) COMP-3.     C1600160
+              10  TOTAL-ACCUM-PART-SURRS     PIC S9(9)V9(2) COMP-3.     C1600160
+              10  TOTAL-GMIB-RATE            PIC S9(2)V9(3) COMP-3.     C1600160
+              10  TOTAL-GMIB-FEE-AMT         PIC S9(9)V9(2) COMP-3.     C1600160
+      *  MVA INFO                                                       C1600160
+080102        10  TOTAL-MVA                  PIC S9(9)V9(2) COMP-3.     C1600160
+061104        10  TOTAL-EXCHG-PREM-REMAINING PIC S9(9)V9(2) COMP-3.             
+003910***  ADDED  FIELDS FOR GWB RIDER 6/11/04 ***********************          
+003920        10  TOTAL-GWB-DATA.                                               
+003930          15  TOTAL-GWB-MAX-BENEFIT-BASE   PIC S9(9)V9(2) COMP-3.         
+003931          15  TOTAL-GWB-BENEFIT-BASE-AMT   PIC S9(9)V9(2) COMP-3.         
+003940          15  TOTAL-GWB-GUAR-WITHDRL-AMT   PIC S9(9)V9(2) COMP-3.         
+003950          15  TOTAL-GWB-ANN-BENEFIT-PYMNT  PIC S9(9)V9(2) COMP-3.         
+003960          15  TOTAL-GWB-ANN-BENEFITS-PAID  PIC S9(9)V9(2) COMP-3.         
+003961          15  TOTAL-GWB-REM-ANN-BNFT-PYMNT PIC S9(9)V9(2) COMP-3.         
+003962          15  TOTAL-GWB-RIDER-CHARGE       PIC S9(9)V9(2) COMP-3.         
+003963          15  TOTAL-GWB-WITHDRL-RATE       PIC SV9(5)     COMP-3.         
+003964          15  TOTAL-GWB-FEE-RATE             PIC SV9(5)   COMP-3.         
+003965          15  TOTAL-GWB-OPTN-RESET-FEE-RATE  PIC SV9(5)   COMP-3.         
+003966          15  TOTAL-GWB-INIT-PREM-BON-RATE   PIC SV9(5)   COMP-3.         
+003968          15  TOTAL-GWB-SUB-PREM-BON-RATE    PIC SV9(5)   COMP-3.         
+003969          15  TOTAL-GWB-AUTO-RES-BON-RATE    PIC SV9(5)   COMP-3.         
+003970          15  TOTAL-GWB-OPTN-RES-BON-RATE    PIC SV9(5)   COMP-3.         
+032005***  ADDED  FIELDS FOR GMIB PLUS RIDER 3/21/05 ********                   
+002005          15  TOTAL-GMIB-GPO-PYMTS120   PIC S9(9)V9(2) COMP-3.            
+SJ0604          15  TOTAL-GWB-GPO-PYMTS120  REDEFINES                           
+SJ0604              TOTAL-GMIB-GPO-PYMTS120   PIC S9(9)V9(2) COMP-3.            
+002005          15  TOTAL-GMIB-GPO-SURRPYMTS  PIC S9(9)V9(2) COMP-3.            
+002005          15  TOTAL-GMIB-ADJAMT-CONTANN PIC S9(9)V9(2) COMP-3.            
+SJ0508*  GMAB INFO                                                      C1600160
+SJ0508        10  TOTAL-GMAB-GUAR-BENE-AMT    PIC S9(9)V9(2) COMP-3.            
+SJ0508        10  TOTAL-GMAB-MAX-GUAR-AMOUNT  PIC S9(9)V9(2) COMP-3.            
+SJ0508        10  TOTAL-GMAB-WITHDRWL-ADJ     PIC S9(9)V9(2) COMP-3.            
+SJ0508        10  TOTAL-ANNUAL-GROWTH-RATE    PIC S9(1)V9(2) COMP-3.            
+SJ0508        10  TOTAL-GMAB-ADJUSTMENT-RATE  PIC S9(1)V9(2) COMP-3.            
+SJ0508        10  TOTAL-GMAB-RIDER-FEE-RATE   PIC S9(1)V9(4) COMP-3.            
+SJ0604***  BEGIN  FIELDS FOR GWB 4 LIFE  3/22/06  ***                           
+SJ0604        10  TOTAL-GWB4LIFE-DATA.                                          
+SJ0604           15 TOTAL-PAYMNT-NOTWITH-ROPD4D  PIC S9(9)V9(2) COMP-3.         
+SJ0604           15 TOTAL-GWB-LAST-OPTN-RST-DTE  PIC S9(8)V     COMP-3.         
+SJ0604***  END    FIELDS FOR GWB 4 LIFE   3/22/06  ***                          
+DW0607*    BEGIN  FIELDS FOR SWT UPDATE   7/26/06  ***                          
+DW0607        10  TOTAL-SWT-DATA.                                               
+DW0607           15  TOTAL-SWT-GREATER-OF-AMT    PIC S9(9)V9(2) COMP-3.         
+DW0607*    END  FIELDS FOR GWB SWT        7/26/06  ***                          
+LR0610***  ADDITIONAL FIELDS FOR ENTERPRISE EXCHANGE                            
+LR0610        10  TOTAL-PAYOUT-AMOUNT            PIC S9(09)V99 COMP-3.          
+LR0610        10  TOTAL-PAYOUT-MODE              PIC X(02).                     
+DW0702*    BEGIN  FIELDS FOR MRD          3/02/07  ***                          
+DW0702        10  TOTAL-GMIB-RTE-CHRG-RATE        PIC SV9(05) COMP-3            
+DW0702                                                   VALUE ZEROS.           
+DW0702*       10  TOTAL-GMIB-RTE-CHRG-RATE-R    REDEFINES                       
+DW0702*           TOTAL-GMIB-RTE-CHRG-RATE        PIC 9(5)  COMP-3.             
+DW0702        10  TOTAL-GMIB-DISC-RTE-PCT         PIC SV9(05) COMP-3            
+DW0702                                                   VALUE ZEROS.           
+DW0702*       10  TOTAL-GMIB-DISC-RTE-PCT-R     REDEFINES                       
+DW0702*           TOTAL-GMIB-DISC-RTE-PCT         PIC 9(5) COMP-3.              
+DW0702        10  TOTAL-GMIB-ACCUM-PCT            PIC SV9(05) COMP-3            
+DW0702                                                   VALUE ZEROS.           
+DW0702*       10  TOTAL-GMIB-ACCUM-PCT-R        REDEFINES                       
+DW0702*           TOTAL-GMIB-ACCUM-PCT            PIC 9(5) COMP-3.              
+DW0702*    END  FIELDS FOR MRD            3/02/07  ***                          
+LR0803        10  TOTAL-EDB-ACCUM-PCT             PIC SV9(05) COMP-3.           
+LR0803        10  TOTAL-EDB-INCOME-BASE-AMT       PIC S9(09)V99 COMP-3.         
+LR0803        10  TOTAL-EDB-RATE-TYPE-USED        PIC X(01).                    
+LR0803            88 TOTAL-EDB-REGULAR-RATE          VALUE 'R'.                 
+LR0803            88 TOTAL-EDB-DISCOUNT-RATE         VALUE 'D'.                 
+LR0803        10  TOTAL-EDB-REG-CHG-RATE          PIC SV9(05) COMP-3.           
+LR0803        10  TOTAL-EDB-DISCOUNT-CHG-RATE     PIC SV9(05) COMP-3.           
+LR0803        10  TOTAL-EDB-FEE-AMT               PIC S9(09)V99 COMP-3.         
+LR0806*** ADDED NEW FIELD FOR NY LWG GMIB 6% TASK                               
+LR0806        10  TOTAL-GMIB-AIA-CAP-AMT          PIC S9(09)V99 COMP-3.         
+LR0510*** ADDED NEW FIELDS FOR EV15 RMD                                         
+LR0510        10  TOTAL-GMIB-EDB-ALLOW-WITH-AMT   PIC S9(09)V99 COMP-3          
+LR0510                                                   VALUE ZEROS.           
+LR0510        10  TOTAL-GMIB-EDB-REM-ALLOW-AMT    PIC S9(09)V99 COMP-3          
+LR0510                                                   VALUE ZEROS.           
+LR0510        10  TOTAL-GMIB-EDB-PREV-RMD         PIC S9(09)V99 COMP-3          
+LR0510                                                   VALUE ZEROS.           
+LR0510        10  TOTAL-GMIB-EDB-CURR-RMD         PIC S9(09)V99 COMP-3          
+LR0510                                                   VALUE ZEROS.           
+LR0510        10  TOTAL-GMIB-EDB-REMAINING-WITH   PIC S9(09)V99 COMP-3          
+LR0510                                                   VALUE ZEROS.           
+LR0510        10  TOTAL-GMIB-EDB-RMD-FRNDLY-SYS   PIC S9(09)V99 COMP-3          
+LR0510                                                   VALUE ZEROS.           
+CJ1009***     10  FILLER                          PIC X(127).                   
+CJ1009        10  TOTAL-IHAV-INTERVAL-RESET       PIC S9(04)    COMP            
+CJ1009                                                   VALUE ZEROS.           
+CJ1009        10  TOTAL-NTH-CONTRACT-ANNIV        PIC S9(04)    COMP            
+CJ1009                                                   VALUE ZEROS.           
+CJ1009        10  TOTAL-DEATH-BENEFIT-FEE         PIC SV9(05)   COMP-3          
+CJ1009                                                   VALUE ZEROS.           
+CJ1009        10  TOTAL-ESP-FEE                   PIC SV9(05)   COMP-3          
+CJ1009                                                   VALUE ZEROS.           
+CJ1009*       10  FILLER                          PIC X(117).                   
+CJ2964        10  TOTAL-GMIB-WITH-RATE            PIC SV9(05)   COMP-3          
+CJ2964                                                   VALUE ZEROS.           
+CJ2964        10  TOTAL-EDB-WITH-RATE             PIC SV9(05)   COMP-3          
+CJ2964                                                   VALUE ZEROS.           
+CJ2964*       10  FILLER                          PIC X(111).                   
+CJ3047        10  ORIG-INVESTMENT                 PIC S9(09)V99 COMP-3.         
+CJ3047*       10  TOTAL-NET-PREMIUM               PIC S9(09)V99 COMP-3.         
+CJ0815        10  TOTAL-CUM-PREMIUM               PIC S9(09)V99 COMP-3          
+CJ0815                                                   VALUE ZEROS.           
+CJ3047        10  TOTAL-WITHDRAWALS               PIC S9(09)V99 COMP-3.         
+CJ3047        10  SURRENDER-PENALTY-AMT           PIC S9(09)V99 COMP-3.         
+CJ3047        10  PREV-POL-ANNV-V                 PIC S9(09)V99 COMP-3.         
+CJ3047        10  FREE-PREMIUM-AMT                PIC S9(09)V99 COMP-3.         
+CJ3047        10  GUARANTEE-PREMIUM-AMT           PIC S9(09)V99 COMP-3.         
+CJ3047        10  FLAT-FEE-AMT                    PIC S9(09)V99 COMP-3.         
+CJ3047        10  TERM-VALUE                      PIC S9(09)V99 COMP-3.         
+CJ3047        10  TOTAL-ADJUSTMENT-AMT            PIC S9(09)V99 COMP-3.         
+CJ3047        10  TOTAL-PROTECTION-AMT            PIC S9(09)V99 COMP-3.         
+CJ3047        10  TOTAL-EXCESS-AMT                PIC S9(09)V99 COMP-3.         
+RJ0814*       10  FILLER                          PIC X(39).                    
+RJ0814        10  TOTAL-GMAB-INIT-GBA             PIC S9(09)V99 COMP-3.         
+RJ0814        10  TOTAL-GMAB-STEPUP-GBA           PIC S9(09)V99 COMP-3.         
+RJ0814        10  TOTAL-INIT-RIDER-FEE            PIC SV9(5) COMP-3.            
+LR1114        10  TOTAL-ODB-FEE-RATE              PIC SV9(5) COMP-3             
+LR1114                                                   VALUE ZEROS.           
+LR1114        10  TOTAL-ODB-CHARGE-AMT            PIC S9(09)V99 COMP-3          
+LR1114                                                   VALUE ZEROS.           
+RJ0814*       10  FILLER                          PIC X(24).                    
+LR1114*       10  FILLER                          PIC X(15).                    
+NY0315        10  TOTAL-GMIB-GPO-DATA.                                          
+NY0315            15 TOTAL-GMIB-ACCOUNT-VAL       PIC S9(9)V9(2) COMP-3.        
+NY0315            15 TOTAL-GMIB-GPO-BASIS         PIC S9(9)V9(2) COMP-3.        
+NY0315            15 TOTAL-GMIB-GPO-FACTOR        PIC S9(3)V9(2) COMP-3.        
+CJ0515        10  TOTAL-SURR-PLAN-CODE            PIC X(06)                     
+CJ0515                                                   VALUE SPACES.          
+CJ0615        10  TOTAL-GMAB-MAT-DATA.                                          
+CJ0615            15 TOTAL-GMAB-ADJAMT-CONTANN    PIC S9(9)V9(2) COMP-3         
+CJ0615                                                   VALUE ZEROS.           
+CJ0615            15 TOTAL-GMAB-BASIS             PIC S9(9)V9(2) COMP-3         
+CJ0615                                                   VALUE ZEROS.           
+CJ0615            15 TOTAL-GMAB-ACCOUNT-VAL       PIC S9(9)V9(2) COMP-3         
+CJ0615                                                   VALUE ZEROS.           
+SL0915        10  TOTAL-LOCKIN-DEATH-BENEFIT-AMT  PIC S9(9)V9(2) COMP-3         
+SL0915                                                   VALUE ZEROS.           
+SL0716        10  TOTAL-GMSV-AMT                  PIC S9(9)V9(2) COMP-3         
+SL0716                                                   VALUE ZEROS.           
+LR1017        10  TOTAL-GMDB-ANN-BENEFIT-PYMNT   PIC S9(9)V99   COMP-3.         
+LR1017        10  TOTAL-DB-BENEFIT-BASE          PIC S9(9)V99   COMP-3.         
+LR1017        10  TOTAL-ALLOW-WITH-BASE          PIC S9(9)V99   COMP-3.         
+LR1017        10  TOTAL-GMDB-CHARGE-AMT          PIC S9(9)V99   COMP-3.         
+LR1017        10  TOTAL-GMDB-WITHDRL-RATE        PIC SV9(5)     COMP-3.         
+LR1017        10  TOTAL-GMDB-REMAN-DOL-FOR-DOL   PIC S9(9)V9(2) COMP-3.         
+LR1017        10  TOTAL-DB-PCT-ACCOUNT-VAL       PIC SV9(5)     COMP-3.         
+LR1017        10  FILLER                         PIC X(34).                     
+CJ0615*       10  FILLER                          PIC X(100).                   
+CJ0615*       10  FILLER                          PIC X(82).                    
+SL0915*       10  FILLER                          PIC X(76).                    
+LR1017*       10  FILLER                          PIC X(70).                    

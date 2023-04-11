@@ -1,0 +1,791 @@
+PIC  X(04).                          
+PIC  X(20).                          
+PIC  X(06).                          
+PIC  X(02).                          
+PIC  X(03).                          
+PIC  X(01).                          
+PIC  X(01).                          
+PIC  X(07).                          
+PIC  X(02).                          
+PIC  9(08).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  S9(11)V9(2) COMP-3.             
+PIC  X(02).                          
+PIC  S9(11)V9(2) COMP-3.             
+PIC  S9(03)V9(2) COMP-3.             
+PIC  X(01).                          
+PIC  X(02).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  X(01).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  X(01).                         
+PIC  9(01).                          
+PIC  9(01).                          
+PIC  X(01).                      
+PIC  X(02).                          
+PIC  X(01).                          
+PIC  X(01).                          
+PIC  X(01).                          
+PIC  X(01).                          
+PIC  X(10).                          
+PIC  X(01).                          
+PIC  X(01).                          
+PIC  X(01).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  9(08).                          
+PIC  X(01).                          
+PIC  9(03).                          
+PIC  9(03).                          
+PIC  X(01).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  X(01).                          
+PIC  X(01).                          
+PIC  X(01).                      
+PIC  X(80).                      
+PIC  X(35).                      
+PIC  X(25).                      
+PIC  X(10).                      
+PIC  X(10).                      
+PIC  X(15).                      
+PIC  9(04).                      
+PIC  9(02).                      
+PIC  9(02).                      
+PIC  X(01).                      
+PIC  X(01).                      
+PIC  X(80).                      
+PIC  X(35).                      
+PIC  X(25).                      
+PIC  X(10).                      
+PIC  X(10).                      
+PIC  X(15).                      
+PIC  9(04).                      
+PIC  9(02).                      
+PIC  9(02).                      
+PIC  X(01).                      
+PIC  X(01).                          
+PIC  X(80).                      
+PIC  X(35).                      
+PIC  X(25).                      
+PIC  X(10).                      
+PIC  X(10).                      
+PIC  X(15).                      
+PIC  9(04).                      
+PIC  9(02).                      
+PIC  9(02).                      
+PIC  X(01).                      
+PIC  X(80).                      
+PIC  X(35).                      
+PIC  X(25).                      
+PIC  X(10).                      
+PIC  X(10).                      
+PIC  X(15).                      
+PIC  9(04).                      
+PIC  9(02).                      
+PIC  9(02).                      
+PIC  X(01).                      
+PIC  X(01).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  X(01).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  X(02).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  X(01).                          
+PIC  9(04).                        
+PIC  9(02).                        
+PIC  9(02).                        
+PIC  X(01).                        
+PIC  X(01).                        
+PIC  X(01).                        
+PIC  X(10).                        
+PIC  X(06).                        
+PIC  X.                          
+PIC  S9(8)V COMP-3.              
+PIC  S9(8)V COMP-3.              
+PIC  S9(8)V COMP-3.              
+PIC  S9(8)V COMP-3.              
+PIC  S9(8)V COMP-3.              
+PIC  S9(8)V COMP-3.              
+PIC  S9(8)V COMP-3.              
+PIC  S9(8)V COMP-3.              
+PIC  S9(8)V COMP-3.              
+PIC  S99 COMP-3.                
+PIC  S99 COMP-3.                 
+PIC  S99 COMP-3.                
+PIC  X.                         
+PIC  S99 COMP-3.                
+PIC  S9(8)V COMP-3.                     
+PIC  X.                           
+PIC  S9(2) COMP-3.                
+PIC  S9(8)V COMP-3.               
+PIC  S9(2) COMP-3.              
+PIC  S9(8)V COMP-3.             
+PIC  S9(8)V COMP-3.             
+PIC  S9(3)V COMP-3.             
+PIC  X(06).                     
+PIC  S9(8)V COMP-3.             
+PIC  S9(8)V COMP-3.             
+PIC  S9(8)V COMP-3.             
+PIC  S9(8)V COMP-3.             
+PIC  S9(3)V COMP-3.             
+PIC  S9(4)V COMP-3.             
+PIC  S9(8)V COMP-3.             
+PIC  X(01).                    
+PIC  X(06).                    
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(3)V COMP-3.            
+PIC  S9(3)V COMP-3.            
+PIC  S9(3)  COMP-3.            
+PIC  S9(3)  COMP-3.            
+PIC  S9(4)V COMP-3.            
+PIC  9(3).                    
+PIC  X(1).                     
+PIC  X(1).                     
+PIC  9(3).                     
+PIC  9(3).                     
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S9(3)  COMP-3.            
+PIC  S9(8)V COMP-3.            
+PIC  S99    COMP-3.            
+PIC  S99    COMP-3.            
+PIC  S99    COMP-3.            
+PIC  X(1).                     
+PIC  S9(9)V99 COMP-3.          
+PIC  X(01).                    
+PIC  9(08).                    
+PIC  S9(04) COMP.              
+PIC  S9(08) COMP-3.            
+PIC  S9(08) COMP-3.            
+PIC  X(01).                    
+PIC  X(01).                    
+PIC  S9(9)V99 COMP-3.              
+PIC  S9(9)V99 COMP-3.              
+PIC  X(01) VALUE SPACES.          
+PIC  9(02) VALUE ZEROES.           
+PIC  S9(08) COMP-3               
+PIC  S9(08) COMP-3            
+PIC  S9(08) COMP-3            
+PIC  X(01) VALUE SPACES.         
+PIC  X(01) VALUE SPACES.         
+PIC  X(01) VALUE SPACES.         
+PIC  X(01) VALUE SPACES.        
+PIC  9(08) COMP-3              
+PIC  X(06).                     
+PIC  X(08).                     
+PIC  9(03).                     
+PIC  X(08).                     
+PIC  X(06).                     
+PIC  X(06).                     
+PIC  X(08).                     
+PIC  S9(03) COMP-3.             
+PIC  X(08).                     
+PIC  X(08).                     
+PIC  S9(02) COMP-3.             
+PIC  9(03).                     
+PIC  9(02).                     
+PIC  X(01).                     
+PIC  X(08).                     
+PIC  X(08).                     
+PIC  S9(04) COMP.               
+PIC  S9(03)V9(2) COMP-3.        
+PIC  S9(03)V9(2) COMP-3.        
+PIC  X(02).                     
+PIC  X(193).                    
+PIC  X(03).                     
+PIC  X(01).                     
+PIC  X(189).                    
+PIC  X(01).                     
+PIC  X(1).                      
+PIC  X(1).                      
+PIC  X(01).                     
+PIC  X(1).                      
+PIC  X(1).                      
+PIC  X(01).                     
+PIC  X(01).                     
+PIC  X(1).                      
+PIC  X(01)                      
+PIC  X(01)                      
+PIC  X(184).                    
+PIC  9(08).                     
+PIC  9(04).                     
+PIC  9(02).                     
+PIC  9(02).                     
+PIC  S99V999 COMP-3.            
+PIC  X(173).                    
+PIC  S9(11)V99                  
+PIC  9(02).                     
+PIC  X(164).                    
+PIC  X(01).                     
+PIC  X(01).                     
+PIC  9(08).                     
+PIC  9(4).                      
+PIC  9(2).                      
+PIC  9(2).                      
+PIC  9(08).                     
+PIC  9(4).                     
+PIC  9(2).                     
+PIC  9(2).                     
+PIC  9(08) VALUE 0.            
+PIC  X(01)                     
+PIC  X(06)                     
+PIC  X(16)                     
+PIC  X(01)                     
+PIC  9(08).                    
+PIC  9(04).                    
+PIC  9(02).                    
+PIC  9(02).                    
+PIC  9(03)                     
+PIC  X(01).                    
+PIC  X(154).                   
+PIC  X(146).                   
+PIC  X(138).                   
+PIC  X(137).                   
+PIC  X(131).                   
+PIC  X(115).                   
+PIC  X(106).                   
+PIC  X(103).                   
+PIC  X(102).                   
+PIC  X(20).                  C1600050
+PIC  X(06).                  C1600070
+PIC  X(02).                  C1600080
+PIC  X(03).                  C1600090
+PIC  X(01).                  C1600100
+PIC  X(01).                  C1600110
+PIC  X(07).                  C1600120
+PIC  S9(9)V9(2) COMP-3.      C1600130
+PIC  S9(9)V9(2) COMP-3.      C1600140
+PIC  S9(9)V9(2) COMP-3.      C1600150
+PIC  S9(9)V9(2) COMP-3.      C1600160
+PIC  S9(9)V9(2) COMP-3.      C1600160
+PIC  S9(9)V9(2) COMP-3.      C1600160
+PIC  S9(9)V9(2) COMP-3.      C1600160
+PIC  S9(9)V9(2) COMP-3.      C1600160
+PIC  S9(9)V9(2) COMP-3.      C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(2)V9(3) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(1)V9(4) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(2)V9(3) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.     C1600160
+PIC  S9(9)V9(2) COMP-3.             
+PIC  S9(9)V9(2) COMP-3.         
+PIC  S9(9)V9(2) COMP-3.         
+PIC  S9(9)V9(2) COMP-3.         
+PIC  S9(9)V9(2) COMP-3.         
+PIC  S9(9)V9(2) COMP-3.         
+PIC  S9(9)V9(2) COMP-3.         
+PIC  S9(9)V9(2) COMP-3.         
+PIC  SV9(5)     COMP-3.         
+PIC  SV9(5)   COMP-3.         
+PIC  SV9(5)   COMP-3.         
+PIC  SV9(5)   COMP-3.         
+PIC  SV9(5)   COMP-3.         
+PIC  SV9(5)   COMP-3.         
+PIC  SV9(5)   COMP-3.         
+PIC  S9(9)V9(2) COMP-3.            
+PIC  S9(9)V9(2) COMP-3.            
+PIC  S9(9)V9(2) COMP-3.            
+PIC  S9(9)V9(2) COMP-3.            
+PIC  S9(9)V9(2) COMP-3.            
+PIC  S9(9)V9(2) COMP-3.            
+PIC  S9(9)V9(2) COMP-3.            
+PIC  S9(1)V9(2) COMP-3.            
+PIC  S9(1)V9(2) COMP-3.            
+PIC  S9(1)V9(4) COMP-3.            
+PIC  S9(9)V9(2) COMP-3.         
+PIC  S9(8)V     COMP-3.         
+PIC  S9(9)V9(2) COMP-3.         
+PIC  S9(09)V99 COMP-3.          
+PIC  X(02).                     
+PIC  SV9(05) COMP-3            
+PIC  9(5)  COMP-3.             
+PIC  SV9(05) COMP-3            
+PIC  9(5) COMP-3.              
+PIC  SV9(05) COMP-3            
+PIC  9(5) COMP-3.              
+PIC  SV9(05) COMP-3.           
+PIC  S9(09)V99 COMP-3.         
+PIC  X(01).                    
+PIC  SV9(05) COMP-3.           
+PIC  SV9(05) COMP-3.           
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3          
+PIC  S9(09)V99 COMP-3          
+PIC  S9(09)V99 COMP-3          
+PIC  S9(09)V99 COMP-3          
+PIC  S9(09)V99 COMP-3          
+PIC  S9(09)V99 COMP-3          
+PIC  X(127).                   
+PIC  S9(04)    COMP            
+PIC  S9(04)    COMP            
+PIC  SV9(05)   COMP-3          
+PIC  SV9(05)   COMP-3          
+PIC  X(117).                   
+PIC  SV9(05)   COMP-3          
+PIC  SV9(05)   COMP-3          
+PIC  X(111).                   
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3          
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  X(39).                    
+PIC  S9(09)V99 COMP-3.         
+PIC  S9(09)V99 COMP-3.         
+PIC  SV9(5) COMP-3.            
+PIC  SV9(5) COMP-3             
+PIC  S9(09)V99 COMP-3          
+PIC  X(24).                    
+PIC  X(15).                    
+PIC  S9(9)V9(2) COMP-3.        
+PIC  S9(9)V9(2) COMP-3.        
+PIC  S9(3)V9(2) COMP-3.        
+PIC  X(06)                     
+PIC  S9(9)V9(2) COMP-3         
+PIC  S9(9)V9(2) COMP-3         
+PIC  S9(9)V9(2) COMP-3         
+PIC  S9(9)V9(2) COMP-3         
+PIC  S9(9)V9(2) COMP-3         
+PIC  S9(9)V99   COMP-3.         
+PIC  S9(9)V99   COMP-3.         
+PIC  S9(9)V99   COMP-3.         
+PIC  S9(9)V99   COMP-3.         
+PIC  SV9(5)     COMP-3.         
+PIC  S9(9)V9(2) COMP-3.         
+PIC  SV9(5)     COMP-3.         
+PIC  X(34).                     
+PIC  X(100).                   
+PIC  X(82).                    
+PIC  X(76).                    
+PIC  X(70).                    
+PIC  X(20).                  C1600030
+PIC  X(06).                  C1600050
+PIC  X(02).                  C1600060
+PIC  X(03).                  C1600070
+PIC  X(01).                  C1600080
+PIC  X(01).                  C1600090
+PIC  X(07).                  C1600100
+PIC  X(03).                  C1600110
+PIC  X(06).                  C1600110
+PIC  X(02).                  C1600120
+PIC  X(02).                  C1600130
+PIC  9(04).                  C1600160
+PIC  9(02).                  C1600170
+PIC  9(02).                  C1600180
+PIC  X(03).                  C1600190
+PIC  S9(2)V9(3) COMP-3.      C1600200
+PIC  9(04).                  C1600230
+PIC  9(02).                  C1600240
+PIC  9(02).                  C1600250
+PIC  S9(9)V9(2) COMP-3.      C1600260
+PIC  S9(9)V9(2) COMP-3.      C1600260
+PIC  S9(2)V9(3) COMP-3.      C1600260
+PIC  S9(2)V9(3) COMP-3.      C1600260
+PIC  9(04).                  C1600230
+PIC  9(02).                  C1600240
+PIC  9(02).                  C1600250
+PIC  S9(02)V999 COMP-3.              
+PIC  S9(03)     COMP-3.              
+PIC  S9(02)V999 COMP-3.              
+PIC  S9(03)     COMP-3.              
+PIC  S9(02)V999 COMP-3.              
+PIC  X(187).                         
+PIC  X(1).                           
+PIC  S9(02)V999 COMP-3.              
+PIC  S9(02)V999 COMP-3.              
+PIC  S9(02)V999 COMP-3.              
+PIC  S9(02)V999 COMP-3.              
+PIC  X(180).                         
+PIC  X(01).                          
+PIC  S9(05)       COMP-3.    C1600230
+PIC  S9(05)       COMP-3.    C1600230
+PIC  S9(09)V9(02) COMP-3.    C1600230
+PIC  S9(03)V9(06) COMP-3.    C1600230
+PIC  S9(03)V9(06) COMP-3.    C1600230
+PIC  S9(03)V9(06) COMP-3.    C1600230
+PIC  S9(03)V9(06) COMP-3.    C1600230
+PIC  S9(03)V9(06) COMP-3.    C1600230
+PIC  S9(03)V9(06) COMP-3.    C1600230
+PIC  S9(03)V9(06) COMP-3.    C1600230
+PIC  X(06) VALUE SPACES.             
+PIC  S9(02)V9(03) COMP-3             
+PIC  X(132).                         
+PIC  X(126).                         
+PIC  X(123).                         
+PIC  X(20).                  C1600030
+PIC  X(06).                          
+PIC  X(04).                          
+PIC  X(20).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  9(04).                          
+PIC  9(02).                          
+PIC  9(02).                          
+PIC  S9(5).                          
+PIC  X(01).                          
+PIC  S9(05).                         
+PIC  9(03).                          
+PIC  S9(09)V99 COMP-3.               
+PIC  X(02) VALUE SPACES.             
+PIC  S9(09)V99 COMP-3.               
+PIC  S9(09)V99 COMP-3.               
+PIC  X(01).                          
+PIC  S9(09)V99 COMP-3.               
+PIC  S9(09)V99 COMP-3.               
+PIC  S9(9)V99 COMP-3.                
+PIC  S9(09)V99 COMP-3.               
+PIC  S9(07)V99 COMP-3.               
+PIC  S9(07)V99 COMP-3.               
+PIC  X(01).                          
+PIC  X(01).                          
+PIC  9(03).                          
+PIC  X(06).                          
+PIC  S9(9)V99 COMP-3.                
+PIC  S9(9)V99 COMP-3.                
+PIC  S9(9)V99 COMP-3.                
+PIC  S9(9)V99 COMP-3.               
+PIC  S9(9)V99 COMP-3.                
+PIC  X(194).                         
+PIC  X(06).                          
+PIC  X(06).                          
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(9)V9(2) COMP-3.              
+PIC  S9(11)V99  COMP-3.              
+PIC  X(104).                         
+PIC  X(97).                          
+PIC  S9(02)V9(03) COMP-3.            
+PIC  S9(03)V9(03) COMP-3.            
+PIC  S9(02)V9(03) COMP-3.            
+PIC  S9(03)V9(03) COMP-3.            
+PIC  S9(02)V9(03) COMP-3.            
+PIC  S9(09)V9(02) COMP-3.            
+PIC  S9(09)V9(02) COMP-3.            
+PIC  S9(09)V9(02) COMP-3.            
+PIC  S9(07)V9(02) COMP-3.            
+PIC  S9(02)V9(03) COMP-3.            
+PIC  S9(03)V9(03) COMP-3.            
+PIC  S9(02)V9(03) COMP-3.            
+PIC  S9(03)V9(03) COMP-3.            
+PIC  S9(09)V9(02) COMP-3.            
+PIC  S9(09)V9(02) COMP-3.            
+PIC  S9(09)V9(02) COMP-3             
+PIC  S9(02)V9(03) COMP-3             
+PIC  X(06) VALUE SPACES.             
+PIC  S9(02)V9(03) COMP-3             
+PIC  S9(02)V9(03) COMP-3.            
+PIC  S9(9)V9(2)   COMP-3.            
+PIC  X(20).                          
+PIC  X(16).                          
+PIC  X(47).                          
+PIC  X(38).                          
+PIC  X(32).                          
+PIC  X(29).                          
+PIC  X(15).             00070001
+PIC  X.                 00080001
+PIC  X(3).              00090001
+PIC  X.                 00100001
+PIC  9(8).              00110001
+PIC  X.                 00120001
+PIC  9(8).              00130001
+PIC  X.                 00140001
+PIC  9(4).              00150002
+PIC  9(2).              00150003
+PIC  9(2).              00150004
+PIC  X.                 00160001
+PIC  9(3).              00170001
+PIC  X.                 00180001
+PIC  X(6).              00190001
+PIC  X.                 00200001
+PIC  X(2).              00210001
+PIC  X.                 00220001
+PIC  99.                00230001
+PIC  X.                 00240001
+PIC  +999999999.99.         00250001
+PIC  X.                     00260001
+PIC  +999999999.99.         00270001
+PIC  X.                     00280001
+PIC  +999999999.99.         00290001
+PIC  X.                     00300001
+PIC  9(3).                  00310001
+PIC  X.                     00320001
+PIC  X(1).                  00330001
+PIC  X.                     00340001
+PIC  9(3).                  00350001
+PIC  X.                     00360001
+PIC  9(3).                  00370001
+PIC  X.                     00380001
+PIC  X(1).                  00390001
+PIC  X.                     00400001
+PIC  +999.                  00410001
+PIC  X.                     00420001
+PIC  +999999999.99.         00430001
+PIC  X.                     00440001
+PIC  +999999999.99.         00450001
+PIC  X.                     00460001
+PIC  +999999999.99.         00470001
+PIC  X.                     00480001
+PIC  9(03).                 00490001
+PIC  X.                     00500001
+PIC  9(04).                 00510003
+PIC  9(02).                 00510004
+PIC  9(02).                 00510005
+PIC  X(69).                 00510006
+PIC  X(20).                  C1600030
+PIC  X(04).                  C1600030
+PIC  X(06).                  C1600030
+PIC  S9(11)V99    COMP-3.    C1600030
+PIC  X(08).                  C1600030
+PIC  S9(02)V9(05) COMP-3.    C1600030
+PIC  S9(11)V99    COMP-3.    C1600030
+PIC  X(02).                  C1600030
+PIC  9(02)V9(05) COMP-3.             
+PIC  X(24).                          
+PIC  X(06).              00000800
+PIC  X(20).              00000900
+PIC  X(03).              00001000
+PIC  X.                  00001200
+PIC  S9(5)    COMP-3.   00001500
+PIC  X(4).              00001600
+PIC  X(2).              00001700
+PIC  X.            00001800
+PIC  9(4).              00002300
+PIC  9(2).              00002400
+PIC  9(2).              00002500
+PIC  9(8).         00002700
+PIC  9(4).         00002900
+PIC  9(2).         00003000
+PIC  9(2).         00003100
+PIC  9(8).         00003300
+PIC  9(4).              00003500
+PIC  9(2).              00003600
+PIC  9(2).              00003700
+PIC  9(8).              00003900
+PIC  9(4).               00004100
+PIC  9(2).               00004200
+PIC  9(2).               00004300
+PIC  9(8).              00004500
+PIC  X(8).              00004600
+PIC  9(3)     COMP-3.   00004700
+PIC  9(3)     COMP-3.   00004800
+PIC  9(3)     COMP-3.   00004900
+PIC  9(3)     COMP-3.   00005000
+PIC  S9(9)V99 COMP-3.   00005100
+PIC  S9(9)V99 COMP-3.   00005200
+PIC  S9(9)V99 COMP-3.   00005300
+PIC  S9(3)    COMP-3.   00005400
+PIC  S9(9)V99 COMP-3.   00005500
+PIC  S9(9)V99 COMP-3.   00005600
+PIC  X(14).             00005700
+PIC  X.                 00005800
+PIC  SV9(5)   COMP-3.   00005900
+PIC  SV9(5)   COMP-3.   00006000
+PIC  SV9(5) COMP-3.     00006100
+PIC  SV9(5)   COMP-3.   00006300
+PIC  SV9(5)   COMP-3.   00006400
+PIC  SV9(5)   COMP-3.   00006500
+PIC  X(20).             00006600
+PIC  S9(3)    COMP-3.   00006700
+PIC  S9(3)    COMP-3.   00006800
+PIC  SV9(5)   COMP-3.   00006900
+PIC  S9(9)V99 COMP-3.   00006910
+PIC  9(4).              00006950
+PIC  99.                00006970
+PIC  99.                00006990
+PIC  9(8).              00006993
+PIC  X(01).             00006996
+PIC  S9(03)   COMP-3.   00006997
+PIC  9(4).           00006999
+PIC  9(2).           00007000
+PIC  9(2).           00007001
+PIC  SV9(5)   COMP-3.   00007200
+PIC  SV9(5)   COMP-3.   00007210
+PIC  SV9(5)   COMP-3.   00007220
+PIC  SV9(5)   COMP-3.   00007230
+PIC  S9(5)    COMP-3.   00007300
+PIC  X(06) VALUE                
+PIC  X(01).                         00001300
+PIC  X(03).                         00001400
+PIC  X(21).                         00001500
+PIC  X(10).                         00001710
+PIC  X(02).                         00001800
+PIC  9(03).                         00001900
+PIC  X(01).                         00002000
+PIC  9(02).                         00002100
+PIC  X(01).                         00002300
+PIC  9(03).                         00002400
+PIC  X(03).                         00002600
+PIC  X(01).                         00002700
+PIC  X(20).                         00002800
+PIC  X(01).                         00002900
+PIC  X(08).                         00003000
+PIC  X(145).                        00003100
+PIC  X(6).                  
+PIC  X(5).                  
+PIC  X(5).                  
+PIC  X(3).                  
+PIC  X(5).                  
+PIC  X(06).                              
+PIC  X(03).                              
+PIC  9(02).                              
+PIC  X(07).                              
+PIC  X(02).                              
+PIC  X(23).                              
+PIC  X(10).                              
+PIC  X(6).                          
+PIC  X(1).                          
+PIC  X(50).                         
+PIC  X(1).                          
+PIC  X(8).                          
+PIC  X(1).                          
+PIC  X(24).                         
+PIC  X(8).                          
+PIC  X(1).                          
+PIC  X(4).                          
+PIC  X(1).                          
+PIC  X(4).                          
+PIC  X(1).                          
+PIC  X(15).                         
+PIC  X(1).                          
+PIC  9(2).                          
+PIC  X(1).                          
+PIC  X(30).                         
+PIC  X(1).                          
+PIC  X(8).                          
+PIC  X(1).                          
+PIC  X(13).                         
+PIC  X(6).                          
+PIC  X(1).                          
+PIC  X(50).                         
+PIC  X(1).                          
+PIC  9(15).                         
+PIC  X(1).                          
+PIC  X(16).                         
+PIC  X(1).                          
+PIC  X(6).                          
+PIC  X(1).                          
+PIC  X(50).                         
+PIC  X(1).                          
+PIC  X(8).                          
+PIC  X(1).                          
+PIC  X(24).                         
+PIC  X(8).                          
+PIC  X(1).                          
+PIC  X(4).                          
+PIC  X(1).                          
+PIC  X(4).                          
+PIC  X(1).                          
+PIC  X(15).                         
+PIC  X(1).                          
+PIC  9(2).                          
+PIC  X(1).                          
+PIC  X(30).                         
+PIC  X(1).                          
+PIC  -9(13).9(5).                   
+PIC  X(1).                          
+PIC  X(1).                          
+PIC  X(6).                          
+PIC  X(1).                          
+PIC  X(50).                         
+PIC  X(1).                          
+PIC  9(15).                         
+PIC  X(1).                          
+PIC  X(16).                         
+PIC  X(1).                          
+PIC  X(20) VALUE SPACES.        
+PIC  X(03) VALUE SPACES.        
+PIC  X(20) VALUE SPACES.        
+PIC  X(03) VALUE SPACES.        
+PIC  X(08) VALUE SPACES.        
+PIC  X(01) VALUE SPACE.         
+PIC  X(20) VALUE SPACES.        
+PIC  X(08) VALUE SPACES.        
+PIC  X(08) VALUE SPACES.        
+PIC  9(04) VALUE ZEROES.        
+PIC  9(02) VALUE ZEROES.        
+PIC  X(01) VALUE SPACE.         
+PIC  X(08) VALUE SPACES.        
+PIC  X(01) VALUE SPACES.        
+PIC  X(10) VALUE SPACES.        
+PIC  X(10) VALUE SPACES.        
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACES.        
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(01) VALUE SPACE.         
+PIC  X(240)                     
+PIC  X(45) VALUE SPACES.        
+PIC  X(153)                     

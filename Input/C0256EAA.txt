@@ -1,0 +1,595 @@
+      *US RETAIL SEPARATION SPINCO COPYBOOK  - REPLICATED FROM C0252EAA         
+      *-------------------------------------------------------*                 
+      *       LAYOUT FOR COMMON CHASIS ANNUITIES              *                 
+      *       COPY BOOK    : C1609AE1                         *                 
+      *       DESCRIPTION  : FAMIS CONTRACT FILE              *                 
+LR0803*       LENGTH       : 1200                             *                 
+      *       DATE CREATED : 09/28/2001                       *                 
+      *       DATE MOD     : 03/22/2005 ADD GMIB PLUS   CHK   *                 
+SJ0508*       DATE MOD     : 08/15/2005 ADD GMAB AND          *                 
+SJ0508*                    : ADDITIONAL FIELDS FOR GWB  SAJ   *                 
+SJ0601*       DATE MOD     : 01/10/2006 ADD CLOSEST ISSUE AGE *                 
+SJ0604*       DATE MOD     : 03/22/2006 ADD GWB 4 LIFE FIELDS *                 
+DW0607*       GWB SWT MOD  : 07/26/2006 ADD GWB SWT FIELDS DW *                 
+LR0610*       DATE MOD     : 10/19/2006 ADDITIONAL FIELDS     *                 
+LR0610*                      FOR ENTERPRISE EXCHANGE          *                 
+SP1206*       DATE MOD     : 12/7/06 ADDED NEW COMMISION TYPE *                 
+SP1206*                      'X' TO THE 88 LEVEL OF           *                 
+SP1206*                      CONTRACT-COMM-OPT-CODE           *                 
+DW0702*       PEIV MOD     : 02/28/2007 ADD 2 NEW FIELDS FOR  *                 
+DW0702*                      PE IV AND EIGHT NEW MRD FIELDS   *                 
+PA0518*       DATE MOD     : 18/5/07 ADDED TWO NEW FIELDS,    *                 
+PA0518*                      STEP-UP-IND AND STEP-UP-DATE     *                 
+LR0803*       DATE MOD     : 03/14/2008 CHANGED FOR EV15      *                 
+LR0803*                      EDB LWG GMIB+ TASK               *                 
+LR0806*       DATE MOD     : 06/02/2008 CHANGED FOR NY LWG    *                 
+LR0806*                      GMIB 6% TASK                     *                 
+LR0812*       DATE MOD     : 12/17/2008 CHANGED FOR EV15 GWB  *                 
+LR0812*                      AUTO RESET TASK                  *                 
+LR0510*       DATE MOD     : 05/26/2010 ADDED TWO NEW FIELDS  *                 
+LR0510*                      FOR  EV15 RMD                    *                 
+CJ1009*       DATE MOD     : 09/14/2010 ADDED NEW FIELD       *                 
+CJ1009*                      FOR  AHEV                        *                 
+LR0311*       DATE MOD     : 03/16/2011 ADDED NEW FIELDS FOR  *                 
+LR0311*                      EV15 TARGET VOL                  *                 
+CJ2964*       DATE MOD     : 06/11/2012 ADD THE FOLLOWING :   *                 
+CJ2964*                      - CONTRACT-EXPECTED-PREMIUM -    *                 
+CJ2964*                        THIS FIELD WAS ADDED BY EV15   *                 
+CJ2964*                        ADMIN BY MISTAKE IN THEIR      *                 
+CJ2964*                        COPYBOOK FOR THE JONES O SHARE *                 
+CJ2964*                        IMPLEMENTATION.                *                 
+CJ2964*                        CONTRACT-LOE-PAYMENT IS LOADED *                 
+CJ2964*                        WITH EXPECTED-PREMIUM ALREADY. *                 
+CJ2964*                        DAACT IT IS NOW ADDING THIS    *                 
+CJ2964*                        TO BE IN SYNCH WITH THEIR COPY *                 
+CJ2964*                        BOOK. DAACT IT WILL NOT MAKE   *                 
+CJ2964*                        ANY REFERENCE TO THIS FIELD.                     
+CJ2964*                      - CONTRACT-FIRST-WITHDRAWAL-DUR  *                 
+CJ2964*                        FIELD IS ADDED FOR MAX IV.     *                 
+CJ3047*       DATE MOD     : 01/12/2013 ADD THE FOLLOWING     *                 
+CJ3047*                      FIELDS FOR INDEXED ANNUITY:      *                 
+CJ3047*                      - CONTRACT-INDEX-IND - TO KNOW   *                 
+CJ3047*                        IF INDEXED PRODUCT             *                 
+CJ3047*                      - CONTRACT-COMPARE-IND - SUPPORTS*                 
+CJ3047*                        LOCK RULES                     *                 
+UV0613*       DATE MOD     : 06/04/2013 ADDED NEW FIELD FOR   *                 
+UV0613*                                 DATAMART LOADING      *                 
+RJ1113*       DATE MOD     : 02/19/2014 ADDED NEW FIELD FOR   *                 
+RJ1113*                              CONTRACT-RATE-LOCK-DATE  *                 
+RJ1113*                                                       *                 
+RJ0814*       DATE MOD     : 11/30/2014 ADDED NEW FIELDS FOR  *                 
+RJ0814*                                 CONTRACT EXTRACT FILE *                 
+RJ0814*                                 AND TOTAL EXTRACT FILE*                 
+LR1114*       DATE MOD     : 11/24/2014 ADDED NEW FIELDS AS   *                 
+LR1114*                                 PART OF EA FLEX CHOICE*                 
+LR1114*                                 RIDER                 *                 
+CJ0515*       DATE MOD     : 05/18/2015 SURR-PLAN-CODE ADDED  *                 
+CJ0515*                                 FOR WMA FIXED DA      *                 
+CJ0515*                                 PRODUCT ENHANCEMENTS. *                 
+LR0615*       DATE MOD     : 06/22/2015 ADDED NEW FIELD       *                 
+LR0615*                        CONTRACT-GWB-FLEX-RATE-TBL-PTR *                 
+LR0615*                        AS PART OF EA FLEX CHOICE-     *                 
+LR0615*                        POINTER ID                     *                 
+SL0915*       DATE MOD     : 09/10/2015 ADDED NEW FIELDS      *                 
+SL0915*                        AS PART OF REINSURANCE DEATH   *                 
+SL0915*                        CLAIM PROJECT                  *                 
+SL0716*       DATE MOD     : 07/21/2016 ADDED NEW FIELD       *                 
+SL0716*                        AS PART OF FIA                 *                 
+LR1017*       DATE MOD     : 10/25/2017 FEB 2018 FLEX CHOICE  *                 
+LR1017*                      CHANGES                          *                 
+NY1118*       DATE MOD     : 09/24/2018 ADDED NEW REINSURANCE *                 
+NY1118*                        FIELD FOR FIXED ANNUNITY       *                 
+NY1118*                        PRODUCT 2018                   *                 
+      *-------------------------------------------------------*                 
+              10  CONTRACT-SUBSID-TYP       PIC X(04).                          
+              10  CONTRACT-CONT-ID          PIC X(20).                          
+              10  CONTRACT-ADMIN-CODE.                                          
+                  15  PLAN-CODE             PIC X(06).                          
+                  15  FILLER                PIC X(02).                          
+                  15  IRS-MKT-CDE           PIC X(03).                          
+                  15  FILLER                PIC X(01).                          
+                  15  CONT-TYP              PIC X(01).                          
+                      88 TYP-INDIVITUAL       VALUE 'I'.                        
+                      88 TYP-GROUP            VALUE 'G'.                        
+                  15  FILLER                PIC X(07).                          
+              10  CONTRACT-RESID-STATE-CDE  PIC X(02).                          
+              10  CONTRACT-ISSUE-DTE        PIC 9(08).                          
+              10  CONTRACT-FILL2   REDEFINES CONTRACT-ISSUE-DTE.                
+                  15 ISSUE-CCYY             PIC 9(04).                          
+                  15 ISSUE-MM               PIC 9(02).                          
+                  15 ISSUE-DD               PIC 9(02).                          
+              10  CONTRACT-EXCH-ISS-DTE.                                        
+                  15 EXCH-CCYY              PIC 9(04).                          
+                  15 EXCH-MM                PIC 9(02).                          
+                  15 EXCH-DD                PIC 9(02).                          
+              10  CONTRACT-EXPCD-PMT-AMT    PIC S9(11)V9(2) COMP-3.             
+              10  CONTRACT-PMT-MODE-CDE     PIC X(02).                          
+                  88 SINGLE-PREM-NO-BILL      VALUE '00'.                       
+                  88 BILL-YEARLY              VALUE '01'.                       
+                  88 BILL-TWICE-YEARLY        VALUE '02'.                       
+                  88 BILL-QUARTERLY           VALUE '04'.                       
+                  88 BILL-MONTHLY             VALUE '12'.                       
+                  88 BILL-4-WEEKS             VALUE '13'.                       
+                  88 BILL-3-WEEKS             VALUE '17'.                       
+                  88 BILL-SEMI-MONTHLY        VALUE '24'.                       
+                  88 BILL-BI-WEEKLY           VALUE '26'.                       
+                  88 BILL-WEEKLY              VALUE '52'.                       
+              10  CONTRACT-INIT-DEPOSIT-AMT PIC S9(11)V9(2) COMP-3.             
+              10  CONTRACT-ADMN-FEE-AMT     PIC S9(03)V9(2) COMP-3.             
+              10  CONTRACT-ADMN-FEE-IND     PIC X(01).                          
+              10  CONTRACT-PROD-STS         PIC X(02).                          
+                  88 ACTIVE-CONTRACT          VALUE 'A ', '2 ', 'E ',           
+                                                    'U ', 'W '.                 
+              10  CONTRACT-LAST-STS-DTE.                                        
+                  15 LSTSTS-CCYY            PIC 9(04).                          
+                  15 LSTSTS-MM              PIC 9(02).                          
+                  15 LSTSTS-DD              PIC 9(02).                          
+              10  CONTRACT-ALLCD-PLN-IND    PIC X(01).                          
+              10  CONTRACT-EFFECTIVE-DTE.                                       
+                  15 EFFECTIVE-CCYY         PIC 9(04).                          
+                  15 EFFECTIVE-MM           PIC 9(02).                          
+                  15 EFFECTIVE-DD           PIC 9(02).                          
+              10  CONTRACT-VARIABLE-FIXED-CD PIC X(01).                         
+                  88 CONTRACT-IS-FIXED        VALUE 'F'.                        
+                  88 CONTRACT-IS-VARIABLE     VALUE 'V'.                        
+              10  CONTRACT-RISK-CODE        PIC 9(01).                          
+                  88 NON-PENSION              VALUE 0.                          
+                  88 PENSION                  VALUE 1.                          
+              10  CONTRACT-CLASS-CODE       PIC 9(01).                          
+              10  CONTRACT-DISTRIBUTION-CHANNEL PIC X(01).                      
+                  88 GENERAL-AGENCY           VALUE 'G'.                        
+              10  CONTRACT-ISSUE-REASON     PIC X(02).                          
+                  88 NEW-ISSUE                VALUE '00'.                       
+                  88 INTERNAL-EXCHANGE        VALUE '01'.                       
+                  88 EXTERNAL-EXCHANGE        VALUE '03'.                       
+              10  CONTRACT-LOB-CODE.                                            
+                  15 LOB-DBO                PIC X(01).                          
+                  15 LOB-CHAR2              PIC X(01).                          
+                  15 LOB-IRS-MKT-CD         PIC X(01).                          
+              10  CONTRACT-QUAL-NONQUAL-IND PIC X(01).                          
+                  88 CONTRACT-IS-QUALIFIED    VALUE 'Q'.                        
+                  88 CONTRACT-NON-QUALIFIED   VALUE 'N'.                        
+              10  CONTRACT-COMM-OPT-CODE    PIC X(10).                          
+                  88 DEPOSIT-BASED-COMMS      VALUE 'A'.                        
+                  88 TRAIL-COMMS              VALUE 'B'.                        
+                  88 NO-COMMS-PAYABLE         VALUE 'C', 'N'.                   
+LR0803            88 COMMS-PAYABLE            VALUE 'Y'.                        
+SP1206            88 EXCHANGE                 VALUE 'X'.                        
+              10  CONTRACT-DB-OPT-CODE      PIC X(01).                          
+                  88 DBOPT-ACCT-VALUE         VALUE 'V'.                        
+                  88 DBOPT-ROP                VALUE 'R'.                        
+                  88 DBOPT-ASU                VALUE 'A'.                        
+                  88 DBOPT-ISU                VALUE 'F'.                        
+                  88 DBOPT-GAA                VALUE 'G'.                        
+LR0803            88 DBOPT-EDB                VALUE 'Y'.                        
+LR1114            88 DBOPT-PP-ODB             VALUE 'W'.                        
+LR1114            88 DBOPT-STEP-ODB           VALUE 'X'.                        
+              10  CONTRACT-EMPL-CR-IND      PIC X(01).                          
+LR0803****** CONTRACT-GMIB-IND RENAMED TO CONTRACT-GMIB-STATUS  ******          
+LR0803        10  CONTRACT-GMIB-STATUS      PIC X(01).                          
+LR0803            88 GMIB-SELECTED            VALUE 'Y'.                        
+LR0803            88 GMIB-NOT-SELECTED        VALUE 'N'.                        
+LR0803            88 GMIB-TERMINATED          VALUE 'T'.                        
+LR0803            88 GMIB-PLUS-GPO-OPTED      VALUE 'G'.                        
+              10  CONTRACT-GMIB-ELECTION-DTE.                                   
+                  15 GMIB-ELECT-CCYY        PIC 9(04).                          
+                  15 GMIB-ELECT-MM          PIC 9(02).                          
+                  15 GMIB-ELECT-DD          PIC 9(02).                          
+              10  CONTRACT-GMIB-MAX-ELECT-DTE.                                  
+                  15 GMIB-MAX-ELECT-CCYY    PIC 9(04).                          
+                  15 GMIB-MAX-ELECT-MM      PIC 9(02).                          
+                  15 GMIB-MAX-ELECT-DD      PIC 9(02).                          
+042805        10  CON-GMIB-MAX-ELECT-CCYYMMDD                                   
+042805              REDEFINES CONTRACT-GMIB-MAX-ELECT-DTE                       
+042805                                      PIC 9(08).                          
+              10  CONTRACT-EPR-IND          PIC X(01).                          
+                  88 EPR-PRESENT              VALUE 'Y'.                        
+                  88 EPR-NOT-PRESENT          VALUE 'N'.                        
+              10  CONTRACT-ISSUE-AGE        PIC 9(03).                          
+              10  CONTRACT-SC-ISSUE-AGE     PIC 9(03).                          
+              10  CONTRACT-SUCCSR-ANNU-CODE PIC X(01).                          
+                  88 SPOUSE-NEW-OWNER         VALUE 'S'.                        
+                  88 ORIG-ANNUITANT           VALUE 'A'.                        
+                  88 NO-SC-ELECTED            VALUE 'N', ' '.                   
+              10  CONTRACT-DATE-OF-DEATH.                                       
+                  15 DEATH-CCYY             PIC 9(04).                          
+                  15 DEATH-MM               PIC 9(02).                          
+                  15 DEATH-DD               PIC 9(02).                          
+              10  CONTRACT-SC-DTE.                                              
+                  15 SPOUSAL-CONT-CCYY      PIC 9(04).                          
+                  15 SPOUSAL-CONT-MM        PIC 9(02).                          
+                  15 SPOUSAL-CONT-DD        PIC 9(02).                          
+      * OWNER INFO                                                              
+              10  CONTRACT-OWNERSHIP-CODE   PIC X(01).                          
+                  88 OWN-OWNER                VALUE 'O'.                        
+                  88 OWN-ANNUITANT            VALUE 'A'.                        
+                  88 OWN-NON-NATURAL          VALUE 'T'.                        
+              10  CONTRACT-CO-OWNER-IND     PIC X(01).                          
+                  88 CONTRACT-HAS-JOINT-OWNERS VALUE 'Y'.                       
+                  88 CONTRACT-NO-JOINT-OWNERS  VALUE ' '.                       
+              10  CONTRACT-FIRST-OWNER-DATA.                                    
+                  15  CONTRACT-OWN1-CO-INDIV-CD PIC X(01).                      
+                      88 OWN1-INDIV-NAME       VALUE 'I'.                       
+                      88 OWN1-COMPANY-NAME     VALUE 'C'.                       
+                  15  CONTRACT-OWN1-NAME        PIC X(80).                      
+                  15  CONTRACT-OWN1-NAME-BRKDWN REDEFINES                       
+                      CONTRACT-OWN1-NAME.                                       
+                      20 CONTRACT-OWN1-LAST-NM  PIC X(35).                      
+                      20 CONTRACT-OWN1-FIRST-NM PIC X(25).                      
+                      20 CONTRACT-OWN1-NM-PFX   PIC X(10).                      
+                      20 CONTRACT-OWN1-NM-SFX   PIC X(10).                      
+                  15  CONTRACT-OWN1-SSN         PIC X(15).                      
+                  15  CONTRACT-OWN1-BIRTH-DTE.                                  
+                      20 OWN1-BIRTH-CCYY        PIC 9(04).                      
+                      20 OWN1-BIRTH-MM          PIC 9(02).                      
+                      20 OWN1-BIRTH-DD          PIC 9(02).                      
+                  15  CONTRACT-OWN1-SEX-TYP     PIC X(01).                      
+      * CO-OWNER INFO                                                           
+              10  CONTRACT-SECOND-OWNER-DATA.                                   
+                  15  CONTRACT-OWN2-CO-INDIV-CD PIC X(01).                      
+                      88 OWN2-INDIV-NAME       VALUE 'I'.                       
+                      88 OWN2-COMPANY-NAME     VALUE 'C'.                       
+                  15  CONTRACT-OWN2-NAME        PIC X(80).                      
+                  15  CONTRACT-OWN2-NAME-BRKDWN REDEFINES                       
+                      CONTRACT-OWN2-NAME.                                       
+                      20 CONTRACT-OWN2-LAST-NM  PIC X(35).                      
+                      20 CONTRACT-OWN2-FIRST-NM PIC X(25).                      
+                      20 CONTRACT-OWN2-NM-PFX   PIC X(10).                      
+                      20 CONTRACT-OWN2-NM-SFX   PIC X(10).                      
+                  15  CONTRACT-OWN2-SSN         PIC X(15).                      
+                  15  CONTRACT-OWN2-BIRTH-DTE.                                  
+                      20 OWN2-BIRTH-CCYY        PIC 9(04).                      
+                      20 OWN2-BIRTH-MM          PIC 9(02).                      
+                      20 OWN2-BIRTH-DD          PIC 9(02).                      
+                  15  CONTRACT-OWN2-SEX-TYP     PIC X(01).                      
+      * ANNUITANT INFO                                                          
+              10  CONTRACT-CO-ANNUIT-IND    PIC X(01).                          
+                  88 CONTRACT-HAS-CO-ANNUIT   VALUE 'Y'.                        
+                  88 CONTRACT-NO-CO-ANNUIT    VALUE ' '.                        
+              10  CONTRACT-FIRST-ANNUITANT-DATA.                                
+                  15  CONTRACT-ANN1-NAME        PIC X(80).                      
+                  15  CONTRACT-ANN1-NAME-BRKDWN REDEFINES                       
+                      CONTRACT-ANN1-NAME.                                       
+                      20 CONTRACT-ANN1-LAST-NM  PIC X(35).                      
+                      20 CONTRACT-ANN1-FIRST-NM PIC X(25).                      
+                      20 CONTRACT-ANN1-NM-PFX   PIC X(10).                      
+                      20 CONTRACT-ANN1-NM-SFX   PIC X(10).                      
+                  15  CONTRACT-ANN1-SSN         PIC X(15).                      
+                  15  CONTRACT-ANN1-BIRTH-DTE.                                  
+                      20 ANN1-BIRTH-CCYY        PIC 9(04).                      
+                      20 ANN1-BIRTH-MM          PIC 9(02).                      
+                      20 ANN1-BIRTH-DD          PIC 9(02).                      
+                  15  CONTRACT-ANN1-SEX-TYP     PIC X(01).                      
+      * CO-ANNUITANT INFO                                                       
+              10  CONTRACT-SECOND-ANNUITANT-DATA.                               
+                  15  CONTRACT-ANN2-NAME        PIC X(80).                      
+                  15  CONTRACT-ANN2-NAME-BRKDWN REDEFINES                       
+                      CONTRACT-ANN2-NAME.                                       
+                      20 CONTRACT-ANN2-LAST-NM  PIC X(35).                      
+                      20 CONTRACT-ANN2-FIRST-NM PIC X(25).                      
+                      20 CONTRACT-ANN2-NM-PFX   PIC X(10).                      
+                      20 CONTRACT-ANN2-NM-SFX   PIC X(10).                      
+                  15  CONTRACT-ANN2-SSN         PIC X(15).                      
+                  15  CONTRACT-ANN2-BIRTH-DTE.                                  
+                      20 ANN2-BIRTH-CCYY        PIC 9(04).                      
+                      20 ANN2-BIRTH-MM          PIC 9(02).                      
+                      20 ANN2-BIRTH-DD          PIC 9(02).                      
+                  15  CONTRACT-ANN2-SEX-TYP     PIC X(01).                      
+              10  CONTRACT-NURSING-HOME-IND PIC X(01).                          
+                  88 NH-AVAILABLE             VALUE 'Y'.                        
+                  88 NH-NOT-APPROVED          VALUE 'N'.                        
+                  88 NH-ACTIVE                VALUE 'A'.                        
+                  88 NH-DENIED                VALUE 'D'.                        
+                  88 NH-INELIGIBLE            VALUE 'X'.                        
+              10  CONTRACT-NURSING-HOME-DTE.                                    
+                  15 NH-CCYY                PIC 9(04).                          
+                  15 NH-MM                  PIC 9(02).                          
+                  15 NH-DD                  PIC 9(02).                          
+              10  CONTRACT-TERMINAL-ILL-IND PIC X(01).                          
+                  88 TI-AVAILABLE             VALUE 'Y'.                        
+                  88 TI-NOT-APPROVED          VALUE 'N'.                        
+                  88 TI-ACTIVE                VALUE 'A'.                        
+                  88 TI-DENIED                VALUE 'D'.                        
+                  88 TI-INELIGIBLE            VALUE 'X'.                        
+              10  CONTRACT-TERMINAL-ILL-DTE.                                    
+                  15 TI-CCYY                PIC 9(04).                          
+                  15 TI-MM                  PIC 9(02).                          
+                  15 TI-DD                  PIC 9(02).                          
+              10  CONTRACT-PRODUCT-CODE     PIC X(02).                          
+                  88 STANDARD-PRODUCT         VALUE 'ST'.                       
+                  88 CSHARE-PRODUCT           VALUE 'CS'.                       
+                  88 LSHARE-PRODUCT           VALUE 'LS'.                       
+                  88 PSHARE-PRODUCT           VALUE 'PS'.                       
+                  88 BONUS-PRODUCT            VALUE 'BN'.                       
+                  88 VSHARE-PRODUCT           VALUE 'VS'.                       
+                  88 FRONT-LOAD-PRODUCT       VALUE 'FL'.                       
+              10  CONTRACT-MATURITY-DTE.                                        
+                  15 MATURITY-CCYY          PIC 9(04).                          
+                  15 MATURITY-MM            PIC 9(02).                          
+                  15 MATURITY-DD            PIC 9(02).                          
+              10  CONTRACT-DISABILITY-IND   PIC X(01).                          
+                  88 DI-AVAILABLE             VALUE 'Y'.                        
+                  88 DI-NOT-APPROVED          VALUE 'N'.                        
+                  88 DI-ACTIVE                VALUE 'A'.                        
+                  88 DI-DENIED                VALUE 'D'.                        
+                  88 DI-INELIGIBLE            VALUE 'X'.                        
+              10  CONTRACT-DISABILITY-DTE.                                      
+                  15 DISABILITY-CCYY          PIC 9(04).                        
+                  15 DISABILITY-MM            PIC 9(02).                        
+                  15 DISABILITY-DD            PIC 9(02).                        
+080102        10  CONTRACT-SPDA-TYPE-IND      PIC X(01).                        
+                  88 SPDA-BULLET              VALUE 'B'.                        
+                  88 SPDA-ANNUAL              VALUE 'A'.                        
+                  88 SPDA-NOT                 VALUE 'N'.                        
+081402            88 SPDA-PGS                 VALUE 'C'.                        
+080102        10  CONTRACT-PGR-IND            PIC X(01).                        
+                  88 RIDER-SELECTED           VALUE 'Y'.                        
+                  88 RIDER-NOTSELECTED        VALUE 'N'.                        
+080102        10  CONTRACT-BONUS-IND          PIC X(01).                        
+                  88 BONUS-NOPLAN             VALUE 'N'.                        
+                  88 BONUS-FIRSTYEAR          VALUE 'F'.                        
+                  88 BONUS-INCREASING         VALUE 'I'.                        
+                  88 BONUS-PREMIUM            VALUE 'P'.                        
+030303        10  CONTRACT-SRVCNG-AGENT       PIC X(10).                        
+030303        10  CONTRACT-SRVCNG-AGENCY      PIC X(06).                        
+018300******  START OF GWB FIELDS   6/11/04   ****                              
+018500        10  CONTRACT-GWB-IND              PIC X.                          
+018600        10  CONTRACT-GWB-ELECTION-DATE    PIC S9(8)V COMP-3.              
+LR1017*       10  CONTRACT-GWB-LAST-RESET-DATE  PIC S9(8)V COMP-3.              
+LR1017        10  CONTRACT-LAST-STEPUP-DATE     PIC S9(8)V COMP-3.              
+LR1017        10  CONTRACT-GWB-LAST-RESET-DATE  REDEFINES                       
+LR1017            CONTRACT-LAST-STEPUP-DATE     PIC S9(8)V COMP-3.              
+018703        10  CONTRACT-GWB-AUTO-RESET-DATE1 PIC S9(8)V COMP-3.              
+018704        10  CONTRACT-GWB-AUTO-RESET-DATE2 PIC S9(8)V COMP-3.              
+LR1017*       10  CONTRACT-GWB-OPTN-RESET-DATE  PIC S9(8)V COMP-3.              
+LR1017        10  CONTRACT-NEXT-STEPUP-DATE     PIC S9(8)V COMP-3.              
+LR1017        10  CONTRACT-GWB-OPTN-RESET-DATE  REDEFINES                       
+LR1017            CONTRACT-NEXT-STEPUP-DATE     PIC S9(8)V COMP-3.              
+018706        10  CONTRACT-GWB-OPT-GUAR-RESWTPRD PIC S99 COMP-3.                
+018707        10  CONTRACT-GWB-INIT-BON-RATEPRD PIC S99 COMP-3.                 
+018708        10  CONTRACT-GWB-SUB-BON-RATE-PRD  PIC S99 COMP-3.                
+018709        10  CONTRACT-GWB-BON-PLAN-CODE-IND PIC X.                         
+018710        10  CONTRACT-GWB-CANCEL-WIN-PERIOD PIC S99 COMP-3.                
+018711        10  CONTRACT-GWB-CNCL-WNDO-BGN-DT                                 
+                                         PIC S9(8)V COMP-3.                     
+018720******  END   OF GWB FIELDS  6/11/04   ****                               
+032005        10  CONTRACT-GMIB-GPO-IND        PIC X.                           
+032005        10  CONTRACT-GMIB-GPO-WAIT-PRD   PIC S9(2) COMP-3.                
+032005        10  CONTRACT-GMIB-GPO-ELECT-DT   PIC S9(8)V COMP-3.               
+032005        10  CONTRACT-GMIB-OPTRESET-WAITPRD PIC S9(2) COMP-3.              
+032005        10  CONTRACT-GMIB-OPTRESET-DTE     PIC S9(8)V COMP-3.             
+032005        10  CONTRACT-GMIB-LST-OPTRESET-DT  PIC S9(8)V COMP-3.             
+032005        10  CONTRACT-GMIB-OPTRESET-MAXAGE  PIC S9(3)V COMP-3.             
+SJ0508******  ADDITION OF GWB FIELDS 8/15/05 ****                               
+SJ0508        10  CONTRACT-GWB-VERSION-CODE      PIC X(06).                     
+LR1017            88 GWB-FLEX-CHOICE             VALUE 'GWBL4',                 
+LR1017                      'GWBLE4','GWBL5','GWBLE5','GWBLP5'.                 
+LR1017*       10  CONTRACT-GWB-KEY-RESET-DATE    PIC S9(8)V COMP-3.             
+LR1017        10  CONTRACT-KEYED-RESET-DTE       PIC S9(8)V COMP-3.             
+LR1017        10  CONTRACT-GWB-KEY-RESET-DATE    REDEFINES                      
+LR1017            CONTRACT-KEYED-RESET-DTE       PIC S9(8)V COMP-3.             
+SJ0508        10  CONTRACT-GWB-EFFECTIVE-DATE    PIC S9(8)V COMP-3.             
+SJ0508        10  CONTRACT-GWB-WITHDRAWAL-DUR    PIC S9(3)V COMP-3.             
+SJ0508        10  CONTRACT-GWB-PREM-ELIGIBLE-DUR PIC S9(4)V COMP-3.             
+SJ0508        10  CONTRACT-GWB-WITH-RT-CHNG-DTE  PIC S9(8)V COMP-3.             
+SJ0508******  END OF GWB FIELDS  8/15/05     ****                               
+SJ0508******  START OF GMAB FIELDS 8/15/05   ****                               
+SJ0508        10  CONTRACT-GMAB-IND               PIC X(01).                    
+SJ0508            88 CONTRACT-GMAB-SELECTED       VALUE 'Y'.                    
+SJ0508            88 CONTRACT-GMAB-NOT-SELECTED   VALUE 'N'.                    
+SJ0508            88 CONTRACT-GMAB-TERMINATED     VALUE 'T'.                    
+SJ0508            88 CONTRACT-GMAB-RE-ELECTED     VALUE 'R'.                    
+SJ0508            88 CONTRACT-GMAB-PENDING        VALUE 'P'.                    
+SJ0508            88 CONTRACT-GMAB-CANCELLED      VALUE 'C'.                    
+SJ0508        10  CONTRACT-GMAB-VERSION-CODE      PIC X(06).                    
+SJ0508        10  CONTRACT-GMAB-ELECTION-DATE     PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-EFFECTIVE-DATE    PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-LAST-CHANGE-DATE  PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-OPTNXT-RST-DATE   PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-OPTLST-RST-DATE   PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-MATURITY-DATE     PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-CNCLWNDO-BEG-DTE  PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-CNCLWNDO-END-DTE  PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-PREM-ELIG-DATE    PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-KEY-RESET-DATE    PIC S9(8)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-MAX-ISSUE-AGE     PIC S9(3)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-MAX-RESET-AGE     PIC S9(3)V COMP-3.            
+SJ0508        10  CONTRACT-GMAB-RIDER-PERIOD      PIC S9(3)  COMP-3.            
+SJ0508        10  CONTRACT-GMAB-OPTRSET-GRACE-PD  PIC S9(3)  COMP-3.            
+SJ0508        10  CONTRACT-GMAB-PREM-ELIG-PRD     PIC S9(4)V COMP-3.            
+SJ0508******  END   OF GMAB FIELDS 8/15/05   ****                               
+SJ0601        10  CONTRACT-CLOSEST-ISSUE-AGE       PIC 9(3).                    
+SJ0604*** BEGIN GWB 4 LIFE UPDATE    3/22/06           ****                     
+SJ0604        10  CONTRACT-GWB-LIFETIME-PAY-IND   PIC X(1).                     
+SJ0604        10  CONTRACT-GWB-COMPOUNDING-IND    PIC X(1).                     
+SJ0604        10  CONTRACT-GWB-MIN-AGE            PIC 9(3).                     
+SJ0604        10  CONTRACT-GWB-MAX-AGE            PIC 9(3).                     
+SJ0604        10  CONTRACT-GWB-CHANGE-DATE        PIC S9(8)V COMP-3.            
+SJ0604        10  CONTRACT-GWB-PENDING-ADD-DATE   PIC S9(8)V COMP-3.            
+SJ0604        10  CONTRACT-GWB-CANCEL-DATE        PIC S9(8)V COMP-3.            
+SJ0604        10  CONTRACT-GWB-CNCL-WNDO-END-DT   PIC S9(8)V COMP-3.            
+SJ0604        10  CONTRACT-GWB-CNCL-WNDO-DAYS     PIC S9(3)  COMP-3.            
+SJ0604        10  CONTRACT-GWB-PREM-ELIG-END-DT   PIC S9(8)V COMP-3.            
+SJ0604        10  CONTRACT-GWB-WITH-RATE-CHG-PRD  PIC S99    COMP-3.            
+SJ0604        10  CONTRACT-GWB-AUTO-RESET-DUR1    PIC S99    COMP-3.            
+SJ0604        10  CONTRACT-GWB-AUTO-RESET-DUR2    PIC S99    COMP-3.            
+SJ0604*** END   GWB 4 LIFE UPDATE    3/22/06           ****                     
+DW0607*** START GWB SWT              7/26/06  DW       ****                     
+DW0607        10  CONTRACT-SWT-INDICATOR          PIC X(1).                     
+DW0607        10  CONTRACT-CURRENT-SWT-MRD-AMT    PIC S9(9)V99 COMP-3.          
+DW0607*** END GWB SWT                7/26/06  DW       ****                     
+LR0610*** START ADDITIONAL FIELDS FOR ENTERPRISE EXCHANGE                       
+LR0610        10  CONTRACT-PAYOUT-OPTION-IND      PIC X(01).                    
+LR0610        10  CONTRACT-NEXT-PAYOUT-DATE       PIC 9(08).                    
+LR0610        10  CONTRACT-STEPUP-AUTH-YEARS      PIC S9(04) COMP.              
+LR0610        10  CONTRACT-ROTH-IRA-CONV-DATE     PIC S9(08) COMP-3.            
+LR0610        10  CONTRACT-IRA-RECHAR-DATE        PIC S9(08) COMP-3.            
+LR0610        10  CONTRACT-ROTH-IRA-IND           PIC X(01).                    
+LR0610        10  CONTRACT-EXCHANGE-1035-IND      PIC X(01).                    
+LR0610*** END   ADDITIONAL FIELDS FOR ENTERPRISE EXCHANGE                       
+DW0702*** START PEIV FIELDS **************************************              
+DW0702        10  CONTRACT-LOE-PAYMENT        PIC S9(9)V99 COMP-3.              
+DW0702        10  CONTRACT-INIT-PLCY-YY-PREM  PIC S9(9)V99 COMP-3.              
+DW0702*** END PEIV FIELDS ****************************************              
+DW0702*** START MRD FIELDS ***************************************              
+DW0702        10  CONTRACT-MRD-TYPE            PIC X(01) VALUE SPACES.          
+DW0702            88  CONT-FIFTY-NINE-AND-A-HALF     VALUE 'F'.                 
+DW0702            88  CONT-SEVENTY-AND-A-HALF        VALUE 'M'.                 
+DW0702            88  CONT-MRD-DEFAULT-VALUES        VALUE 'N'.                 
+DW0702            88  CONT-MRD-NON-RETIRED           VALUE 'R'.                 
+DW0702        10  CONTRACT-MRD-PAYMENT-MODE   PIC 9(02) VALUE ZEROES.           
+DW0702            88  CONT-YEARLY                    VALUE 01.                  
+DW0702            88  CONT-SEMI-ANNUAL               VALUE 02.                  
+DW0702            88  CONT-QUARTERLY                 VALUE 04.                  
+DW0702            88  CONT-MONTHLY                   VALUE 12.                  
+DW0702        10  CONTRACT-MRD-INIT-START-DATE  PIC S9(08) COMP-3               
+DW0702                                               VALUE ZEROES.              
+DW0702        10  CONTRACT-NEXT-MRD-PAYOUT-DATE    PIC S9(08) COMP-3            
+DW0702                                                   VALUE ZEROES.          
+DW0702        10  CONTRACT-MRD-PAYOUT-END-DATE     PIC S9(08) COMP-3            
+DW0702                                                    VALUE ZEROES.         
+DW0702        10  CONTRACT-MRD-CALC-IND         PIC X(01) VALUE SPACES.         
+DW0702            88  CONT-USE-NONRECALC-METHOD      VALUE 'N'.                 
+DW0702            88  CONT-USE-RECALC-METHOD         VALUE 'R'.                 
+DW0702        10  CONTRACT-MRD-RULES            PIC X(01) VALUE SPACES.         
+DW0702            88  CONT-VALID-MRD-RULES           VALUE 'N' 'O' 'T'.         
+DW0702            88  CONT-NEW-MRD-RULES             VALUE 'N'.                 
+DW0702            88  CONT-OLD-MRD-RULES             VALUE 'O'.                 
+DW0702            88  CONT-FINAL-MRD-RULES           VALUE 'T'.                 
+DW0702        10  CONTRACT-MRD-BENE-REL-CODE    PIC X(01) VALUE SPACES.         
+DW0702            88  CONT-JOINT-SPOUSE              VALUE 'S'.                 
+DW0702            88  CONT-JOINT-NON-SPOUSE          VALUE 'N'.                 
+DW0702            88  CONT-SINGLE-LIFE               VALUE 'I'.                 
+DW0702*** END MRD FIELDS *****************************************              
+PA0518        10  CONTRACT-GMIB-STEPUP-IND       PIC X(01) VALUE SPACES.        
+PA0518        10  CONT-GMIB-LST-AUTH-STEPUP-DATE  PIC 9(08) COMP-3              
+PA0518                                               VALUE ZEROES.              
+LR0803        10  CONTRACT-GMIB-VERSION          PIC X(06).                     
+LR0803        10  CONTRACT-GMIB-EFFECTIVE-DATE   PIC X(08).                     
+LR0803        10  CONTRACT-GMIB-MAX-AIA-ROL-AGE  PIC 9(03).                     
+LR0803        10  CONTRACT-GMIB-INCM-KEY-RSET-DT PIC X(08).                     
+LR0803        10  CONTRACT-EDB-STATUS            PIC X(06).                     
+LR0803            88 EDB-SELECTED                    VALUE 'Y'.                 
+LR0803            88 EDB-NOT-SELECTED                VALUE 'N'.                 
+LR0803            88 EDB-TERMINATED                  VALUE 'T'.                 
+LR0803        10  CONTRACT-EDB-VERSION           PIC X(06).                     
+LR0803            88 EDB-RIDER                       VALUE 'EDB',               
+LR0311                                                     'EDB2',              
+LR0311                                                     'EMAX1'.             
+LR0803        10  CONTRACT-EDB-EFFECTIVE-DATE    PIC X(08).                     
+LR0803        10  CONTRACT-EDB-MAX-AGE           PIC S9(03) COMP-3.             
+LR0803        10  CONTRACT-EDB-INCM-KEY-RSET-DT  PIC X(08).                     
+LR0803        10  CONTRACT-EDB-OPT-RSET-DT       PIC X(08).                     
+LR0803        10  CONTRACT-EDB-OPT-RSET-WAIT-DUR PIC S9(02) COMP-3.             
+LR0803        10  CONTRACT-EDB-MAX-AIA-ROL-AGE   PIC 9(03).                     
+LR0803        10  CONTRACT-EDB-STEPUP-AUTH-YRS   PIC 9(02).                     
+LR0803        10  CONTRACT-EDB-STEPUP-IND        PIC X(01).                     
+LR0803            88 CONTRACT-EDB-STEPUP-NA          VALUE ' '.                 
+LR0803            88 CONTRACT-EDB-STEPUP-OPTIONAL    VALUE 'O'.                 
+LR0803            88 CONTRACT-EDB-STEPUP-AUTO        VALUE 'A'.                 
+LR0803        10  CONTRACT-EDB-LAST-OPT-RSET-DT  PIC X(08).                     
+LR0803        10  CONTRACT-EDB-INCM-LST-STPUP-DT PIC X(08).                     
+LR0803        10  CONTRACT-GWB-COMP-ALLOW-WDL    PIC S9(04) COMP.               
+LR0803        10  CONTRACT-GWB-WDL-RATE-AGE      PIC S9(03)V9(2) COMP-3.        
+LR0803        10  CONTRACT-GWB-LIFE-PYMT-AGE     PIC S9(03)V9(2) COMP-3.        
+LR0803        10  CONTRACT-FUND-OPTION           PIC X(02).                     
+LR0806****    10  FILLER                         PIC X(193).                    
+LR0806*** ADDED NEW FIELDS FOR NY LWG GMIB 6% TASK                              
+LR0806        10  CONTRACT-ISSUE-STATE           PIC X(03).                     
+LR0806        10  CONTRACT-GMIB-CAP-AIA-IND      PIC X(01).                     
+LR0812***     10  FILLER                         PIC X(189).                    
+LR0812*** ADDED NEW FIELDS FOR EV15 GWB AUTO RESET TASK                         
+LR0812*       10  CONTRACT-GWB-STEPUP-IND        PIC X(01).                     
+LR1017        10  CONTRACT-STEPUP-IND            PIC X(1).                      
+LR0812            88 CONT-GWB-STEPUP-NONE             VALUE SPACE.              
+LR0812            88 CONT-GWB-STEPUP-OPTIONAL         VALUE 'O'.                
+LR0812            88 CONT-GWB-STEPUP-AUTOMATIC        VALUE 'A'.                
+LR1017        10  CONTRACT-GWB-STEPUP-IND        REDEFINES                      
+LR1017            CONTRACT-STEPUP-IND            PIC X(1).                      
+LR0812*       10  CONTRACT-GWB-STEPUP-STATUS     PIC X(01).                     
+LR1017        10  CONTRACT-STEPUP-STATUS         PIC X(1).                      
+LR0812            88 CONT-GWB-STEPUP-NOT-ELECTED      VALUE SPACE.              
+LR0812            88 CONT-GWB-STEPUP-ACTIVE           VALUE 'A'.                
+LR0812            88 CONT-GWB-STEPUP-CANCELLED        VALUE 'C'.                
+LR0812            88 CONT-GWB-STEPUP-MODIFIED         VALUE 'M'.                
+LR0812            88 CONT-GWB-STEPUP-TERMINATED       VALUE 'T'.                
+LR1017        10  CONTRACT-GWB-STEPUP-STATUS     REDEFINES                      
+LR1017            CONTRACT-STEPUP-STATUS         PIC X(1).                      
+LR0812*       10  CONTRACT-GWB-STEPUP-COMP-IND   PIC X(01).                     
+LR1017        10  CONTRACT-STPUP-CALC-IND        PIC X(01).                     
+LR0812            88 CONT-GWB-STEPUP-NOT-ACTIVE       VALUE SPACE.              
+LR0812            88 CONT-GWB-STEPUP-BENE-BASE-AMT    VALUE 'B'.                
+LR0812            88 CONT-GWB-STEPUP-GUAR-WDL-AMT     VALUE 'G'.                
+LR1017        10  CONTRACT-GWB-STEPUP-COMP-IND   REDEFINES                      
+LR1017            CONTRACT-STPUP-CALC-IND        PIC X(1).                      
+LR0510*** ADDED NEW FIELDS FOR EV15 RMD                                         
+LR0510        10  CONTRACT-BASIC-XESS-WITHDR-IND PIC X(01)                      
+LR0510                                                VALUE SPACE.              
+LR0510        10  CONTRACT-RMD-FRNDLY-WITHDR-IND PIC X(01)                      
+LR0510                                                VALUE SPACE.              
+CJ1009***     10  FILLER                         PIC X(184).                    
+CJ1009*** ADDED NEW FIELD FOR AHEV                                              
+CJ1009        10  CONTRACT-COMMITMENT-DATE       PIC 9(08).                     
+CJ1009        10  CONTRACT-COMMITMENT-DATE-R                                    
+CJ1009            REDEFINES CONTRACT-COMMITMENT-DATE.                           
+CJ1009            15 CONTRACT-COMMITMENT-CCYY    PIC 9(04).                     
+CJ1009            15 CONTRACT-COMMITMENT-MM      PIC 9(02).                     
+CJ1009            15 CONTRACT-COMMITMENT-DD      PIC 9(02).                     
+LR0311        10  CONTRACT-GMIB-CAP-AIA-PCT      PIC S99V999 COMP-3.            
+CJ2964*       10  FILLER                         PIC X(173).                    
+CJ2964        10  CONTRACT-EXPECTED-PREMIUM      PIC S9(11)V99                  
+CJ2964                                                       COMP-3.            
+CJ2964*** ADDED NEW FIELD FOR MAX IV                                            
+CJ2964        10  CONTRACT-FIRST-WITHDRAWAL-DUR  PIC 9(02).                     
+CJ2964*       10  FILLER                         PIC X(164).                    
+CJ3047        10  CONTRACT-INDEX-IND             PIC X(01).                     
+CJ3047            88 INDEX-CONTRACT              VALUE 'Y'.                     
+CJ3047        10  CONTRACT-COMPARE-IND           PIC X(01).                     
+CJ3047            88 CONTRACT-BYPASS             VALUE 'B'.                     
+CJ3047            88 COMPARE-ON                  VALUE 'A' 'E' 'I' 'O'.         
+CJ3047            88 COMPARE-OFF                 VALUE 'N'.                     
+CJ3047            88 COMPARE-APP-SIGN            VALUE 'A'.                     
+CJ3047            88 COMPARE-POLICY-EFF          VALUE 'E'.                     
+CJ3047            88 COMPARE-POLICY-ISSUE        VALUE 'I'.                     
+CJ3047            88 COMPARE-OTHER-DATE          VALUE 'O'.                     
+UV0613        10  CONTRACT-APP-DATE              PIC 9(08).                     
+UV0613        10  CONTRACT-APP-DATE-GROUP REDEFINES CONTRACT-APP-DATE.          
+UV0613            15 CONTRACT-APP-DATE-CCYY      PIC 9(4).                      
+UV0613            15 CONTRACT-APP-DATE-MM        PIC 9(2).                      
+UV0613            15 CONTRACT-APP-DATE-DD        PIC 9(2).                      
+RJ1113        10  CONTRACT-RATE-LOCK-DATE        PIC 9(08).                     
+RJ1113        10  CONTRACT-RATE-LOCK-DATE-GRP REDEFINES                         
+RJ1113            CONTRACT-RATE-LOCK-DATE.                                      
+RJ1113            15 CONTRACT-RATE-LOCK-CCYY      PIC 9(4).                     
+RJ1113            15 CONTRACT-RATE-LOCK-MM        PIC 9(2).                     
+RJ1113            15 CONTRACT-RATE-LOCK-DD        PIC 9(2).                     
+RJ0814        10  CONTRACT-GMAB-LST-STEPUP-DTE    PIC 9(08) VALUE 0.            
+LR1114        10  CONTRACT-SPOUSAL-CONT-IND       PIC X(01)                     
+LR1114                                                  VALUE SPACES.           
+CJ0515        10  CONTRACT-SURR-PLAN-CODE         PIC X(06)                     
+CJ0515                                                  VALUE SPACES.           
+LR0615        10  CONTRACT-GWB-FLEX-RATE-TBL-PTR  PIC X(16)                     
+LR0615                                                  VALUE SPACES.           
+SL0915        10  PARTIAL-DEATH-CLAIM-IND         PIC X(01)                     
+SL0915                                                  VALUE SPACES.           
+SL0915            88 PARTIAL-DEATH-CLAIM-YES     VALUE 'Y'.                     
+SL0915            88 PARTIAL-DEATH-CLAIM-NO      VALUE 'N'.                     
+SL0915        10  LST-PARTL-DEATH-CLAM-TRAN-DATE  PIC 9(08).                    
+SL0915        10  LAST-PARTL-DEATH-CLAM-TRAN-GRP  REDEFINES                     
+SL0915            LST-PARTL-DEATH-CLAM-TRAN-DATE.                               
+SL0915            15 LST-PARTL-DEATH-CLAM-TRAN-CCYY                             
+SL0915                                            PIC 9(04).                    
+SL0915            15 LST-PARTL-DEATH-CLAM-TRAN-MM PIC 9(02).                    
+SL0915            15 LST-PARTL-DEATH-CLAM-TRAN-DD PIC 9(02).                    
+SL0716        10  CONTRACT-GWB-DETERMINATION-AGE  PIC 9(03)                     
+SL0716                                                  VALUE ZEROES.           
+NY1118        10  CONTRACT-REINSURANCE-IND        PIC X(01).                    
+RJ1113*       10  FILLER                          PIC X(154).                   
+RJ1113*       10  FILLER                          PIC X(146).                   
+RJ0814*       10  FILLER                          PIC X(138).                   
+LR1114*       10  FILLER                          PIC X(137).                   
+CJ0515*       10  FILLER                          PIC X(131).                   
+LR0615*       10  FILLER                          PIC X(115).                   
+SL0915*       10  FILLER                          PIC X(106).                   
+SL0716*       10  FILLER                          PIC X(103).                   
+NY1118        10  FILLER                          PIC X(102).                   
